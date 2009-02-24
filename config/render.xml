@@ -6,6 +6,7 @@
       <plugin name="dmzRenderPluginLoadModelOSG"/>
       <plugin name="dmzRenderPluginObjectOSG"/>
       <plugin name="dmzRenderPluginLightingOSG"/>
+      <plugin name="dmzRenderPluginParticleEffectsOSG"/>
       <plugin name="dmzRenderPluginLogoOSG"/>
       <!--
          Note: Setting this module to unload="false" stops the crash on exit

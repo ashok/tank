@@ -1,0 +1,114 @@
+<dmz>
+<runtime>
+   <object-type name="t72m" parent="tank">
+      <particle-effects>
+         <effect>
+            <state resource="dust-trail-particle" name="Dust_Trail">
+               <offset x="0" y="0" z="-1"/>
+               <particle>
+                  <size minimum="1.0" maximum="2.75"/>
+                  <alpha minimum="0.7" maximum="1.0"/>
+                  <color>
+                     <minimum r="0.54" g="0.45" b="0.38" a="0"/>
+                     <maximum r="0.56" g="0.5" b="0.42" a="1.0"/>
+                  </color>
+                  <lifetime seconds="5"/>
+                  <mass kilograms="1"/>
+                  <radius meters="1"/>
+                  <density kilograms-per-metercube="1"/>
+               </particle>
+               <plume>
+                  <shooter minimum="-0.7853" maximum="0.0"/>
+                  <gravity value="5"/>
+                  <speed meters="1.0" seconds="1.0"/>
+                  <emission minimum="4" maximum="7"/>
+                  <placer>
+                     <point x="-1.5" y="0" z="-0.5"/>
+                     <point x="1.5" y="0" z="-0.5"/>
+                  </placer>
+               </plume>
+            </state>
+         </effect>
+         <effect>
+            <state resource="smoke-particle" name="Smoking">
+               <offset x="-1" y="2" z="1"/>
+               <particle>
+                  <size minimum="0.75" maximum="12.0"/>
+                  <alpha minimum="0.7" maximum="1.0"/>
+                  <color>
+                     <minimum r="1.0" g="1.0" b="1.0" a="0"/>
+                     <maximum r="1.0" g="1.0" b="1.0" a="1.0"/>
+                  </color>
+                  <lifetime seconds="5"/>
+                  <mass kilograms="0.1"/>
+                  <radius meters="1"/>
+                  <density kilograms-per-metercube="1"/>
+               </particle>
+               <plume>
+                  <shooter minimum="0.0" maximum="0.0"/>
+                  <gravity value="-5"/>
+                  <speed meters="1.0" seconds="1.0"/>
+                  <emission minimum="10" maximum="20"/>
+                  <placer>
+                     <point x="-0.5" y="-0.5" z="-0.5"/>
+                     <point x="0.5" y="-0.5" z="-0.5"/>
+                     <point x="0.5" y="0.5" z="-0.5"/>
+                     <point x="-0.5" y="0.5" z="-0.5"/>
+                  </placer>
+               </plume>
+            </state>
+         </effect>
+         <effect>
+            <state resource="fire-particle" name="Fire">
+               <offset x="0" y="0" z="2"/>
+               <particle>
+                  <size minimum="0.75" maximum="4.0"/>
+                  <alpha minimum="0.1" maximum="1.0"/>
+                  <color>
+                     <minimum r="1" g="0.3" b="0.2"/>
+                     <maximum r="1" g="0.8" b="0.2"/>
+                  </color>
+                  <lifetime seconds="0.5"/>
+                  <mass kilograms="0.1"/>
+                  <radius meters="1"/>
+                  <density kilograms-per-metercube="1"/>
+               </particle>
+               <plume>
+                  <shooter minimum="0.0" maximum="0.7853"/>
+                  <gravity value="-5"/>
+                  <speed meters="0.0" seconds="0.0"/>
+                  <emission minimum="10" maximum="15"/>
+                  <placer>
+                     <point x="0" y="-1" z="-1"/>
+                     <point x="0" y="1" z="-2"/>
+                     <point x="1" y="-1" z="-1"/>
+                     <point x="-1" y="-1" z="-1"/>
+                  </placer>
+               </plume>
+            </state>
+         </effect>
+      </particle-effects>
+   </object-type>
+   <!--object-type name="blue_buggy" parent="buggy">
+      <render>
+         <particle-effects>
+            <smoke resource="smoke-particle" state="Dead">
+               <offset x="0" y="0" z="4"/>
+               <particle>
+                  <color r="0.90" g="0.9" b="0.9"/>
+               </particle>
+               <plume>
+                  <shooter minimum="0.0" maximum="3.14159"/>
+                  <placer>
+                     <point x="0" y="-1" z="-1"/>
+                     <point x="0" y="1" z="-2"/>
+                     <point x="1" y="-1" z="-1"/>
+                     <point x="-1" y="-1" z="-1"/>
+                  </placer>
+               </plume>
+            </smoke>
+         </particle-effects>
+      </render>
+   </object-type-->
+</runtime>
+</dmz>

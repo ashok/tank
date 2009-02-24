@@ -5,6 +5,7 @@
    <search>
       <path value="../../assets/tank/models"/>
       <path value="../../assets/tank/images"/>
+      <path value="../../assets/io/particles"/>
       <path value="./assets/"/>
    </search>
    <search name="audio">
@@ -19,6 +20,9 @@
    <resource name="collision-sound" file="collision.wav" path="audio"/>
    <resource name="launch-sound" file="launch.wav" path="audio"/>
    <resource name="detonation-sound" file="explosion.wav" path="audio"/>
+   <resource name="smoke-particle" file="smoke.rgb"/>
+   <resource name="fire-particle" file="fire.rgb"/>
+   <resource name="dust-trail-particle" file="dust_trail.rgb"/>
 </resource-map>
 </runtime>
 </dmz>
